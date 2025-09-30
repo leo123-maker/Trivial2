@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trivial2.Capitales"
+             Title="Capitales">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="Pregunta"
+            Text="Pregunta"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+            x:Name="primero"
+            Text="Regresar a la pagina principal" 
+            SemanticProperties.Hint="Regresa a la pagina principal"
+            HorizontalOptions="Fill" />
+        <Button
+            x:Name="segundo"
+            Text="Regresar a la pagina principal" 
+            SemanticProperties.Hint="Regresa a la pagina principal"
+            HorizontalOptions="Fill" />
+        <Button
+            x:Name="tercero"
+            Text="Regresar a la pagina principal" 
+            SemanticProperties.Hint="Regresa a la pagina principal"
+            HorizontalOptions="Fill" />
+        <Button
+            x:Name="cuarto"
+            Text="Regresar a la pagina principal" 
+            SemanticProperties.Hint="Regresa a la pagina principal"
+            HorizontalOptions="Fill" />
+        <Button
+            x:Name="siguiente"
+            Text="Regresar a la pagina principal" 
+            SemanticProperties.Hint="Regresa a la pagina principal"
+            HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>
