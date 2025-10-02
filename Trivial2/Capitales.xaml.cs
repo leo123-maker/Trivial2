@@ -39,4 +39,34 @@ public partial class Capitales : ContentPage
         }
 		correcto1 = opciones.IndexOf(correcto2);
     }
+	 private void respuesta(object sender, EventArgs e)
+ {
+     Button boton = (Button)sender;
+
+     
+     if (boton.Text == Listas.lcapitales[indice])
+     {
+         puntos++;
+         DisplayAlert("Correcto", "pulsa siguiente para continuar", "Ok");
+     }
+     else
+     {
+         incorrecto++;
+         DisplayAlert("Incorrecto", "Intentalo Nuevamente", "Ok");
+     }
+ }
+
+ private void siguiente1(object sender, EventArgs a)
+ {
+     actual++;
+     if (actual < 10)
+     {
+         muestra();
+     }
+     else
+     {
+         DisplayAlert("Fin del Juego", "Aciertos: "+puntos+" Fallos: "+incorrecto, "Ok");
+         muestra();
+    }
+ }
 }
